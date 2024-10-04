@@ -4,6 +4,10 @@
 
 This project utilizes Terraform to provision and manage cloud infrastructure. The architecture is designed to promote modularity and reusability by using Terraform modules. Each module encapsulates specific functionality, making it easier to manage and maintain the infrastructure code.
 
+These is a Terraform Modules configuration files. It will explain the basic fundamentals around the modules. Modules are like Microservices in Software industry, where different features of a single application runs individually but they are loosely coupled to act like a big single application, where we can make changes individually in the every component of that Microservices.
+
+Similarly when we talk about modules, they are separate directories with separate code for a different architecture or services of a Cloud platform. When we combine different modules together based on use cases, it gives out a full scale architecture required to run a software on it.
+
 ## Project Structure
 
 The project follows a well-organized directory structure:
@@ -93,6 +97,18 @@ vpc_name       = "my-vpc"
    ```bash
    terraform apply
    ```
+
+
+
+## FAQ
+
+#### Can I also push terraform.tfvars file in github?
+
+Never!!!!. Make sure that you are not pushing any sensitive information or any explicit values on github. Because these are the values if shared openly, it will have a very devastating impact on your infrastructure.
+
+Make sure you are putting tfvars files and .terraform files in .gitignore file in your system, so that it does not passes onto your github profile.
+
+
 
 ## Conclusion
 
