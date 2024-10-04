@@ -1,0 +1,9 @@
+**/.terraform/
+.terraform/providers/
+modules/igw/.terraform/providers/
+modules/nat/.terraform/providers/
+modules/routeTable/.terraform/providers/
+modules/subnets/.terraform/providers/
+modules/vpc/.terraform/providers/
+modules/securityGroup/.terraform/providers/
+modules/igw/.terraform/providers/registry.terraform.io/hashicorp/aws/5.68.0/darwin_arm64/terraform-provider-aws_v5.68.0_x5
